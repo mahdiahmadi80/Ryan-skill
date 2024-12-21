@@ -1,0 +1,1037 @@
+.sidenav {
+    height: auto;
+    width: 80%;
+    background-color: #111;
+    padding-top: 20px;
+    background-color: transparent;
+}
+
+.dropdown-btn {
+    height: 7%;
+    width: 85%;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px #f3c021;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dropdown-btn:hover {
+    color: black;
+    border: 3px solid #f3c021;
+}
+
+.main {
+    font-size: 20px;
+    /* Increased text to enable scrolling */
+}
+
+.active {
+    color: black;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: white;
+    height: 50%;
+    width: 80%;
+    border-top: 1px #f3c021 solid !important;
+    padding-left: 8px;
+    margin: -20px 0 0 0;
+    border: #f3c021 solid 2px;
+    border-radius: 0 0 25px 25px;
+    -webkit-border-radius: 0 0 25px 25px;
+    -moz-border-radius: 0 0 25px 25px;
+    -ms-border-radius: 0 0 25px 25px;
+    -o-border-radius: 0 0 25px 25px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    font-family: vazir;
+    font-size: 1vw;
+    display: flex;
+    height: 85%;
+    justify-content: center;
+}
+
+table td {
+    padding: 0 0 5% 25px;
+    direction: rtl;
+}
+
+.dvall-courses {
+
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dvall-courses .dvpage-courses {
+
+    height:auto;
+    width:100%;
+    margin: 6rem 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.meeting-nu {
+    height: auto;
+    padding: 10 5;
+    width: 95%;
+    background-color: white;
+    border: #8a6805 2px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10 0;
+
+}
+
+
+
+.meeting-nu .dv-btn {
+    height: auto;
+    direction: rtl;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.meeting-nu .dv-btn .buttondownlaod {
+    height: 50%;
+    width: 30%;
+    border: #f3c021 solid 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+.meeting-nu .dv-btn .buttondownlaod p{
+    font-family: vazir;
+    font-size: 12px;
+    margin: 2% 0;
+}
+.grid {
+    width: 94%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid p{
+    font-size: 15px;
+    font-family: vazir
+}
+
+
+
+.dvall-courses .dvpage-courses .dv-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:auto;
+    margin-top:10px;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-left {
+    height: 100%;
+    width: 35%;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right {
+    height: 100%;
+    width: 65%;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .up {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours {
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0px 0px 3px 0px #959595;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    height: 86%;
+    width: 86%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo {
+    height: 80%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dv-img {
+    height: 100%;
+    width: 35%;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dv-img img {
+    height: 100%;
+    width: 100%
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dvp-courseinfo {
+    height: 100%;
+    width: 60%;
+    border-right: #f1cf66a1 solid 1px;
+    padding: 0 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dvp-courseinfo .title {
+    font-size: 2vw;
+    direction: rtl;
+    font-family: vazir;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dvp-courseinfo .caption {
+    font-size: 1.5vw;
+    direction: rtl;
+    font-family: nazanin;
+}
+
+.star {
+    height: 2.25rem;
+    width: 7rem;
+    border-radius: 5px;
+    border: #f3c021 solid 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-bottom:5px;
+}
+.star p{font-family: vazir;
+    font-size: 11px;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .down {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours {
+
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0px 0px 3px 0px #959595;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    height: 90%;
+    width: 86%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 5% 0;
+    padding: 0 0 2% 0;
+
+
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours .Summary {
+    height: 90%;
+    width: 90%;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours .Summary hr {
+    height: 1px;
+    width: 100%;
+    background-color: #f3c0213b;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours .ptitle {
+    direction: rtl;
+    font-family: vazir;
+}
+
+.dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours .pcaption {
+    direction: rtl;
+    font-family: vazir;
+    font-size: 1vw;
+    margin-top:10px;
+}
+
+
+.dvall-courses .dvpage-courses .dvcenter {
+    width: 100%;
+    height: 61%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top:10px;	
+}
+
+.dvall-courses .dvpage-courses .dvcenter .dv-playcours {
+    background-color: #d9d9d9;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    height: 84%;
+    width: 99%;
+    box-shadow: 0px 0px 3px 0px #959595;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid #949494 1px;
+
+}
+
+.dvall-courses .dvpage-courses .dvcenter .dv-playcours .btn-playcours {
+    height: 80px;
+    width: 80px;
+    background-color: #699bf7;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.dvall-courses .dvpage-courses .dvloc-site {
+    width: 98%;
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dvall-courses .dvpage-courses .dvloc-site .dvp-locsite {
+    height: 60%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.dvall-courses .dvpage-courses .dvloc-site .dvp-locsite p {
+    text-align: right;
+    font-family: vazir;
+}
+
+.dvall-courses .dvpage-courses .dvloc-site hr {
+    height: 1px;
+    width: 100%;
+    background-color: #f3c0213b;
+}
+
+.dvall-courses .dvpage-courses .dvup {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.dvall-courses .dvpage-courses .dvup .up {
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0px 0px 3px 0px #959595;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    height: 80%;
+    width: 93%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;	
+
+}
+
+.dvall-courses .dvpage-courses .dvup .up .dv-cashac {
+    height: 70%;
+    width: 60%;
+}
+
+.dvall-courses .dvpage-courses .dvup .up .dv-cashac .dvp-cashac {
+
+    height: 80%;
+    width: auto;
+}
+
+.dvall-courses .dvpage-courses .dvup .up .dv-cashac .dvp-cashac p {
+    direction: rtl;
+    font-family: vazir;
+    font-size: 1vw;
+    padding: 0 0 5% 0px;
+}
+
+.dvall-courses .dvpage-courses .dvup .up .dv-cashac button {
+    width: 100%;
+    background-color: #f3c021;
+    font-family: vazir;
+    font-size: 1.15vw;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.dvall-courses .dvpage-courses .dvdown {
+    width: 75%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dv-session {
+
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5% 0;
+    height: auto;
+}
+
+.dvall-session {
+
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.dv-session .dvall-session .dv-title {
+    height: auto;
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.dv-session .dvall-session .dv-title .title-box {
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0px 0px 3px 0px #959595;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dv-session .dvall-session .dv-title .title-box .dvp-titlebox {
+
+    height: 10%;
+    width: 95%;
+}
+
+.dv-session .dvall-session .dv-title .title-box .dvp-titlebox p {
+    direction: rtl;
+    font-family: vazir;
+}
+
+.dv-session .dvall-session .dv-title .title-box .dvp-titlebox hr {
+
+    height: 1px;
+    width: 100%;
+    background-color: #f3c0213b;
+}
+
+
+.dv-session .dvall-session .dv-meeting {
+
+    height: auto;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.dv-session .dvall-session .dv-meeting .meeting-box {
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0px 0px 3px 0px #959595;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    height: auto;
+    width: 85%;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.dv-session .dvall-session .dv-meeting .dvp-meeting {
+    height: auto;
+    width: 90%;
+}
+
+.dv-session .dvall-session .dv-meeting .dvp-meeting .ptitle {
+    font-family: vazir;
+    direction: rtl;
+
+}
+
+.dv-session .dvall-session .dv-meeting .dvp-meeting hr {
+    height: 1px;
+    width: 100%;
+    background-color: #f3c0213b;
+}
+
+.dv-session .dvall-session .dv-meeting .dvp-meeting .meeting {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        font-family: vazir;
+        font-size: 3.5vw;
+        display: flex;
+        height: 85%;
+        justify-content: center;
+    }
+
+    table td {
+        padding: 0 0 5% 6px;
+        direction: rtl;
+        font-size: 12px;
+    }
+
+    .dvall-courses {
+
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .dvall-courses .dvpage-courses {
+
+        height: 85%;
+        width: 95%;
+        margin: 6rem 0 0 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .meeting-nu {
+        height: auto;
+        width: 95%;
+        background-color: white;
+        border: #f3c021 2px solid;
+        border-radius: 5px;
+        display: flex;
+        margin: 0 0 3% 0;
+        padding: 0 3% 0 3%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .meeting-nu .dv-btn {
+        height: auto;
+        direction: rtl;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        border-top: solid 1px  #f3c021;
+
+    }
+
+    .meeting-nu .dv-btn .buttondownlaod {
+    
+        margin: 5% 0;
+        height: 50%;
+        width: 40%;
+        border: #f3c021 solid 2px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .meeting-nu .dv-btn .buttondownlaod p{
+        font-family: vazir;
+        font-size: 10px;
+    }
+    .grid {
+        width: 94%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .grid p{
+        font-size: 12px;
+        font-family: vazir
+    }
+
+    .dvall-courses .dvpage-courses .dv-info {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-left {
+        height: 100%;
+        width: 95%;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right {
+        height: auto;
+        width: 100%;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .up {
+        margin: 5% 0 5% 0;
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours {
+        padding: 5% 0 5% 0;
+
+        background: hsla(0, 0%, 96%, 0.692);
+        box-shadow: 0px 0px 3px 0px #959595;
+        backdrop-filter: blur(3.1px);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        height: auto;
+        width: 86%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo {
+        height: 80%;
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dv-img {
+        height: 100%;
+        width: 35%;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dv-img img {
+        height: 100%;
+        width: 100%;
+        border-radius: 24%;
+        margin: 0 0 0 2px;
+
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dvp-courseinfo {
+        height: auto;
+        width: 60%;
+        border-right: #f3c021 solid 4px;
+        padding: 0 10px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dvp-courseinfo .title {
+        font-size: 20px;
+        direction: rtl;
+        font-family: vazir;
+
+
+        /* font-family: oxanium;font-size: 35px; */
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .up .dvcours .dv-courseinfo .dvp-courseinfo .caption {
+        font-size: 13px;
+        direction: rtl;
+        padding: 3% 0;
+        font-family: nazanin;
+    }
+
+    .star {
+        height: auto;
+        width: 40%;
+        border-radius: 5px;
+        border: #f3c021 solid 2px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        padding: 2% 0 2% 0;
+    }
+    .star p{font-family: vazir;
+        font-size: 11px;
+    }
+    .dvall-courses .dvpage-courses .dv-info .dv-right .down {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours {
+
+        background: hsla(0, 0%, 96%, 0.692);
+        box-shadow: 0px 0px 3px 0px #959595;
+        backdrop-filter: blur(3.1px);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        height: auto;
+        width: 86%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours .Summary {
+        height: auto;
+        width: 90%;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours .Summary hr {
+        height: 1px;
+        width: 100%;
+        background-color: #f3c0213b;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours .ptitle {
+        direction: rtl;
+        font-family: vazir;
+    }
+
+    .dvall-courses .dvpage-courses .dv-info .dv-right .down .dvcours .pcaption {
+        direction: rtl;
+        font-family: vazir;
+        font-size: 11px;
+        padding: 3% 0;
+    }
+
+
+    .dvall-courses .dvpage-courses .dvcenter {
+        width: 100%;
+        height: 61%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+    .dvall-courses .dvpage-courses .dvcenter .dv-playcours {
+        background-color: #d9d9d9;
+        backdrop-filter: blur(3.1px);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        height: 84%;
+        width: 93%;
+        box-shadow: 0px 0px 3px 0px #959595;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid #949494 1px;
+        padding: 20% 0 20% 0;
+        margin: 0 0 5% 0;
+
+    }
+
+    .dvall-courses .dvpage-courses .dvcenter .dv-playcours .btn-playcours {
+        height: 80px;
+        width: 80px;
+        background-color: #699bf7;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+
+    .dvall-courses .dvpage-courses .dvloc-site {
+        width: 98%;
+        height: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .dvall-courses .dvpage-courses .dvloc-site .dvp-locsite {
+        height: 60%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .dvall-courses .dvpage-courses .dvloc-site .dvp-locsite p {
+        text-align: right;
+        font-family: vazir;
+        font-size: 10px;
+    }
+
+    .dvall-courses .dvpage-courses .dvloc-site hr {
+        height: 1px;
+        width: 100%;
+        background-color: #f3c0213b;
+    }
+
+    .dvall-courses .dvpage-courses .dvup {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+
+    .dvall-courses .dvpage-courses .dvup .up {
+        background: hsla(0, 0%, 96%, 0.692);
+        box-shadow: 0px 0px 3px 0px #959595;
+        backdrop-filter: blur(3.1px);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        height: 80%;
+        width: 93%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 5% 0;
+        padding: 5% 0 5% 0;
+
+    }
+
+    .dvall-courses .dvpage-courses .dvup .up .dv-cashac {
+        height: 70%;
+        width: 60%;
+    }
+
+    .dvall-courses .dvpage-courses .dvup .up .dv-cashac .dvp-cashac {
+
+        height: 80%;
+        width: auto;
+    }
+
+    .dvall-courses .dvpage-courses .dvup .up .dv-cashac .dvp-cashac p {
+        direction: rtl;
+        font-family: vazir;
+        font-size: 15px;
+        padding: 0 0 5% 0px;
+
+    }
+
+    .dvall-courses .dvpage-courses .dvup .up .dv-cashac button {
+        width: 100%;
+        background-color: #f3c021;
+        font-family: vazir;
+        font-size: 15px;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .dvall-courses .dvpage-courses .dvdown {
+        width: 75%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dv-session {
+
+        display: flex;
+        justify-content: center;
+        margin: 0 0 5% 0;
+    }
+
+    .dvall-session {
+
+        height: auto;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+
+    .dv-session .dvall-session .dv-title {
+        height: auto;
+        width: 95%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .dv-session .dvall-session .dv-title .title-box {
+        background: hsla(0, 0%, 96%, 0.692);
+        box-shadow: 0px 0px 3px 0px #959595;
+        backdrop-filter: blur(3.1px);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        border-radius: 5px;
+        height: auto;
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dv-session .dvall-session .dv-title .title-box .dvp-titlebox {
+
+        height: 10%;
+        width: 95%;
+    }
+
+    .dv-session .dvall-session .dv-title .title-box .dvp-titlebox p {
+        direction: rtl;
+        font-family: vazir;
+    }
+
+    .dv-session .dvall-session .dv-title .title-box .dvp-titlebox hr {
+
+        height: 1px;
+        width: 100%;
+        background-color: #f3c0213b;
+    }
+
+
+    .dv-session .dvall-session .dv-meeting {
+
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 5% 0;
+
+
+    }
+
+    .dv-session .dvall-session .dv-meeting .meeting-box {
+        background: hsla(0, 0%, 96%, 0.692);
+        box-shadow: 0px 0px 3px 0px #959595;
+        backdrop-filter: blur(3.1px);
+        border: 1px solid rgba(255, 255, 255, 0.56);
+        height: auto;
+        width: 86%;
+        border-radius: 5px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .dv-session .dvall-session .dv-meeting .dvp-meeting {
+        height: auto;
+        width: 90%;
+    }
+
+    .dv-session .dvall-session .dv-meeting .dvp-meeting .ptitle {
+        direction: rtl;
+        font-family: vazir;
+
+
+    }
+
+    .dv-session .dvall-session .dv-meeting .dvp-meeting hr {
+        height: 1px;
+        width: 100%;
+        background-color: #f3c0213b;
+    }
+
+    .dv-session .dvall-session .dv-meeting .dvp-meeting .meeting {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+}

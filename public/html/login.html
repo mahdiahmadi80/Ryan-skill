@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../Css/General.css">
+    <link rel="stylesheet" href="../Css/fontawsome/all.min.css">
+    <link rel="stylesheet" href="../Css/login.css">
+
+</head>
+
+<body class="login-bacground" ng-app="myApp" ng-controller="memberCtrl" >
+
+    <div class="login-page">
+        <div class="login">
+            <p style="font-family: vazir;color: black;" onclick="document.location.href='index.html'"><span
+                    class="iconify" data-icon="ic:outline-arrow-back-ios"> </span>بازگشت</p>
+
+            <div class="vorod">
+                <p class="p-vorod">ورود</p>
+                <hr>
+                <p class="p-welcome">بازگشت دوباره شما را خوش آمد میگوییم</p>
+            </div>
+
+            <div class="login-user">
+
+                <div>
+                    <span class="iconify" data-icon="bx:user" data-width="26"></span>
+                    <input type="text" placeholder="نام کاربری" ng-model="userName">
+                </div>
+            </div>
+
+
+            <div class="login-password">
+                <div>
+                    <span class="iconify" data-icon="akar-icons:lock-off" data-width="26"></span>
+                    <input type="text" placeholder="رمز عبور" ng-model="password">
+                </div>
+            </div>
+            <div class="repass" >
+                <p id="wrong">رمز عبور
+                    خود را فراموش کرده اید؟<span>کلیک کنید</span></p>
+            </div>
+
+            <div class="login-btn">
+
+                <button ng-click="login()">تایید</button>
+
+            </div>
+
+            <div class="login-singup">
+                <p>حساب ندارید؟
+                    <a href="../Html/signup.html"><span>کلیک
+                            کنید</span></a>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="login-right">
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="../JavaScript/angular.min.js"></script>
+    <script src="../JavaScript/memberCtrl.js"></script>
+
+
+</body>
+
+
+
+</html>

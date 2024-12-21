@@ -1,0 +1,287 @@
+.dvall-about {
+    display: flex;
+    height: 30%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dv-hrabout {
+    height: 6%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 0 2rem 0;
+}
+
+.dv-hrabout .dv-hricon {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #f3c021;
+    margin-top:-30px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.dv-hrabout hr{
+    background-color: #f3c021;
+    width: 90%;
+    height: 3px;
+}
+
+.dvall-about .dv-see-on-site {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0 0.5px 0.5px 0 black;
+    box-shadow: black 0px 1px 3px 0px;
+    opacity: 1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.dvall-about .dv-see-on-site .dv-aboutsee {
+    background-color: #f3c021;
+    height: 65%;
+    width: 16%;
+    border-radius: 15px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.dvall-about .dv-see-on-site .dv-aboutseeblk {
+    background-color: #000000c2;
+    height: 65%;
+    width: 23%;
+    border-radius: 15px;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.dvall-about .dv-see-on-site .dv-aboutseeblk p {
+    font-family: vazir;
+    text-align: center;
+
+}
+
+.dvall-about .dv-see-on-site .dv-aboutsee p {
+    font-family: vazir;
+    text-align: center;
+
+}
+
+.aboutus {
+    height: 225px;
+    width: 4%;
+    border: #f3c021 5px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 100px 100px 0;
+    margin: 0 0 0 25px;
+}
+
+.aboutus .abp {
+    font-size: 31px;
+    text-align: center;
+    writing-mode: vertical-lr;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 80px 0 80px;
+    margin: 2rem 0 2rem 0;
+    justify-content: center;
+}
+
+.about p {
+    font-size: 1.25vw;
+    font-family: vazir;
+    text-align: right;
+}
+
+
+
+.dvall-about-mob {
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .dvall-about {
+        display: none;
+        height: 30%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dvall-about-mob {
+        display: flex;
+        height: 30%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dvall-about-mob .dv-see-on-site-mob {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 25px;
+        background: hsla(0, 0%, 96%, 0.692);
+        box-shadow: 0 0.5px 0.5px 0 black;
+        box-shadow: black 0px 1px 3px 0px;
+        opacity: 1;
+        flex-direction: column;
+    }
+
+    .dvall-about-mob .dv-see-on-site-mob .up {
+        background-color: #000000c2;
+        height: 30%;
+        width: 85%;
+        border-radius: 25px;
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .dvall-about-mob .dv-see-on-site-mob .up p {
+        font-family: vazir;
+        text-align: center;
+        color: white;
+        text-align: center;
+    }
+
+    .dvall-about-mob .dv-see-on-site-mob .down {
+        height: 65%;
+        width: 90%;
+        border-radius: 25px;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .dvall-about-mob .dv-see-on-site-mob .down .box-site {
+        background-color: #f3c021;
+        height: 80%;
+        width: 30%;
+        border-radius: 25px;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .dvall-about-mob .dv-see-on-site-mob .down .box-site p {
+        font-family: vazir;
+        text-align: center;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .aboutus {
+        height: 30%;
+        width: 80%;
+        border: #f3c021 5px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px 30px 0 0;
+        margin: 0 0 20px 0px;
+        -webkit-border-radius: 30px 30px 0 0;
+        -moz-border-radius: 30px 30px 0 0;
+        -ms-border-radius: 30px 30px 0 0;
+        -o-border-radius: 30px 30px 0 0;
+    }
+
+    .aboutus .abp {
+        font-size: 20px;
+        text-align: center;
+        writing-mode: unset;
+        -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 20px 0 20px;
+        margin: 0 0 3rem 0;
+    }
+
+    .about p {
+        font-size: 12px;
+        font-family: vazir;
+        text-align: right;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

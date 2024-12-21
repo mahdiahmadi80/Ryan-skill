@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../Css/General.css">
+    <link rel="stylesheet" href="../Css/fontawsome/all.min.css">
+    <link rel="stylesheet" href="../Css/login.css">
+
+
+
+    <style>
+
+    </style>
+
+</head>
+<body class="login-bacground" ng-app="myApp" ng-controller="memberCtrl" >
+
+
+<div class="login-page">
+    <div class="login">
+        
+        <div class="vorod">
+            <p class="p-vorod">ثبت نام در رایان</p>
+            <hr>
+            <p class="p-welcome"> عضویت شما را تبریک میگوییم</p>
+        </div>
+   <div class="login-user">
+            <div>
+                <span class="iconify" data-icon="ic:baseline-phone-android" data-width="26"></span>
+                <input type="text" placeholder="شماره همراه" ng-model="addphone">
+            </div>
+        </div>
+        <div class="login-user">
+
+            <div>
+                <span class="iconify" data-icon="bx:user" data-width="26"></span>
+                <input type="text" placeholder="نام " ng-model="addname">
+            </div>
+        </div>
+        <div class="login-user">
+
+            <div>
+                <span class="iconify" data-icon="bx:user" data-width="26"></span>
+                <input type="text" placeholder="نام خانوادگی" ng-model="addlastname">
+            </div>
+        </div>
+        <div class="login-user">
+
+            <div>
+                <span class="iconify" data-icon="akar-icons:lock-off" data-width="26"></span>
+                <input  type="text" id="pass" placeholder="رمز عبور" ng-model="addpassword">
+            </div>
+        </div>
+        <div class="login-user">
+
+            <div>
+                <span class="iconify" data-icon="akar-icons:lock-off" data-width="26"></span>
+                <input type="text" id="confirm" placeholder="تکرار رمز عبور" ng-model="confirmpassword">
+            </div>
+        </div>
+     
+
+        <div class="login-password">
+
+            <div>
+                <span class="iconify" data-icon="cib:gmail" data-color="red" data-width="26"></span>
+                <input type="text" placeholder="ایمیل" ng-model="addemail">
+            </div>
+        </div>
+
+        <div class="login-btn">
+            <button ng-click="signup()">تایید</button>
+        </div>
+
+    </div>
+
+    <div class="login-right">
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<script src="../JavaScript/angular.min.js"></script>
+<script src="../JavaScript/memberCtrl.js"></script>
+
+</body>
+</html>

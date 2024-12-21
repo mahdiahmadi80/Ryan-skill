@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1c222e;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+
+/* Fonts */
+@font-face {
+  font-family: 'vazir';
+  src: url(../Fonts/Vazir-Regular-WOL.woff2);
+}
+
+@font-face {
+  font-family: 'kalame';
+  src: url(../Fonts/KalamehFaNum-Medium\ \(2\).ttf);
+}
+
+@font-face {
+  font-family: 'Nastaliq';
+  src: url(../Fonts/A.Afsaneh.Font.ttf);
+}
+
+@font-face {
+  font-family: 'iranSans';
+  src: url(../Fonts/iraniansans.ttf);
+}
+
+@font-face {
+  font-family: 'iranSans1';
+  src: url(../Fonts/IRANSans-Light-web.ttf);
+}
+
+@font-face {
+  font-family: 'yekan';
+  src: url(../Fonts/yekan.ttf);
+}
+
+@font-face {
+  font-family: 'nazanin';
+  src: url(../Fonts/nazanin.ttf);
+}
+
+@font-face {
+  font-family: 'oxanium';
+  src: url(../Fonts/Oxanium-Light.ttf);
+}
+
+@font-face {
+  font-family: 'oxaniumb';
+  src: url(../Fonts/Oxanium-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'beirut';
+  src: url(../Fonts/Mj_Beirut.ttf);
+}
+
+@font-face {
+  font-family: 'yekanBakht';
+  src: url(../Fonts/YekanBakhRegular.otf);
+}
+
+@font-face {
+  font-family: 'yekanBakhtBold';
+  src: url(../Fonts/YekanBakhBold.otf);
+}
+
+
+@font-face {
+  font-family: 'helvetica';
+  src: url(../Fonts/HelveticaNeue-Bold.otf);
+}
+
+
+
+
+
+
+
+
+
+.mainTitle {
+  color: #1c222e;
+  font-family: yekanBakhtBold;
+  list-style: none;
+  font-size: 24px;
+  margin: 0 0;
+  padding: 0 0;
+  font-weight: bold;
+  word-spacing: -3px;
+}
+
+.mainCaption {
+  color: #a4a6a8;
+  font-family: yekanBakht;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 7px 0 0 0;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .hide-pc {
+    display: none !important;
+  }
+}
+
+
+
+/* circle for index.html */
+.cirfirst2 {
+  clip-path: circle(15% at 88% 23rem);
+  width: 100%;
+  height: 100%;
+  background-color: #76c6f2;
+  position: absolute;
+  z-index: -1;
+}
+
+.cirfirst3 {
+  clip-path: circle(20% at 5% 30rem);
+  width: 100%;
+  height: 100%;
+  background-color: #B4C7CE;
+  position: absolute;
+  z-index: -1;
+}
+
+.cirfirst1 {
+  clip-path: circle(17% at 5% 16rem);
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: -1;
+}

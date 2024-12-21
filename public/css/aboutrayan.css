@@ -1,0 +1,27 @@
+.dvall-aboutsite {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dvall-aboutsite .dv-aboutsite {
+
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.dvall-aboutsite .dv-aboutsite hr{
+    background-color: #f3c021;height: 1px;border: none;width: 20rem; margin: 2px 0 1.5% 0;
+}
+
+.dvall-aboutsite .dv-aboutsite .title {
+    color: white;
+    font-family: vazir;
+    font-size: 2.5em;
+}.dvall-aboutsite .dv-aboutsite .caption{
+    color: white;text-align: right;width: 30%;font-family: vazir;
+}

@@ -1,0 +1,393 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.profile-stu {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-stu .left {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-stu .left .dvinfo {
+    height: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10% 0 5% 0;
+}
+
+.profile-stu .left .dvinfo .dvcash {
+    height: 300px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-stu .left .dvinfo .dvcash .cash {
+    height: 190px;
+    width: 100%;
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0 0.5px 0.5px 0 black;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid #fade7d;
+    border-radius: 25px;
+    box-shadow: 0px 2px 10px 0px #959595;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-stu .left .dvinfo .dvcash .code {
+    height: 70px;
+    width: 100%;
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0 0.5px 0.5px 0 black;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid #fade7d;
+    border-radius: 25px;
+    box-shadow: 0px 2px 10px 0px #959595;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-stu .left .dvinfo .dvcash .code .dv-code {
+    height: 55%;
+    width: 60%;
+    background-color: #8476e2;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-stu .left .dvinfo .dvcash .code .dv-code button {
+    background-color: #f3c021;
+    height: 85%;
+    width: 25%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.profile-stu .left .dvinfo .dvcash .code .dv-code button p {
+    font-family: vazir;
+    font-size: 0.9vw;
+    text-align: center;
+}
+
+.profile-stu .left .dvinfo .dvcash .code .dv-code .dv-codenum {
+    width: 70%;
+    color: white;
+    text-align: center;
+    font-family: Oxanium;
+}
+
+.profile-stu .left .dvinfo .dvcash .code p {
+    font-size: 1.25vw;
+    font-family: vazir;
+}
+
+.profile-stu .left .dvcourses {
+    display: flex;
+    height: 300px;
+    width: 95%;
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0 0.5px 0.5px 0 black;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid #fade7d;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 2px 10px 0px #959595;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.profile-stu .left .dvcourses .pcourses {
+    height: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-stu .left .dvcourses .pcourses hr {
+    width: 40%;
+    background-color: #f3c021;
+    height: 1.5px;
+}
+
+.profile-stu .left .dvcourses .pcourses p {
+    font-family: vazir;
+    font-size: 1.25vw;
+}
+
+.profile-stu .left .dvcourses .courses-stu {
+    background-color: coral;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-stu .left .dvcourses .courses-stu .cours {
+    height: 150px;
+    width: 20%;
+    background-color: red;
+}
+
+.profile-stu .left .dvcourses .courses-stu .cours-add {
+    height: 150px;
+    width: 20%;
+    background-color: red;
+}
+
+.profile-stu .right {
+    height: 100%;
+    width: 20%;
+    margin: 5rem 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-stu .right .dvpanel {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 17%;
+    border-radius: 50px 0 0 50px;
+    background: hsla(0, 0%, 96%, 0.925);
+    box-shadow: 0 0.5px 0.5px 0 black;
+    backdrop-filter: blur(3.1px);
+    border: 2px solid #f3c021;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-stu .right .dvpanel .dv-panel {
+    height: 95%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-stu .right .dvpanel .dv-panel .dv-imgp {
+    height: 20%;
+    width: 100%;
+}
+
+.profile-stu .right .dvpanel .dv-panel .dv-imgp img {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.profile-stu .right .dvpanel .dv-panel .dv-imgp p {
+    font-family: vazir;
+    text-align: center;
+}
+
+.profile-stu .right .dvpanel .dv-dropdown {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+.profile-stu .right .dvpanel .dv-dropdown .dropdown-panel{
+    height: 100%; width: 100%;display: flex;align-items: center;flex-direction: column;justify-content: space-evenly;
+}
+.profile-stu .right .dvpanel .dv-dropdown .dropdown-panel div{
+    background-color: #e7e7ff;height: 10%;width: 90%;border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-stu .right .dvpanel .dv-dropdown .dropdown-panel div p{
+    
+font-family: vazir;
+font:1rem ;
+
+}
+.dvcash .cash .iconif {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.dvcash .cash .dvpcash {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dvcash .cash .pcash {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.dvcash .cash .pcash .dvp-account {
+    height: 25%;
+}
+
+.dvcash .cash .pcash .dvp-account p {
+    font-family: vazir;
+    font-size: 1.25vw;
+    text-align: right;
+}
+
+.dvcash .cash .pcash .dvp-money {
+    height: 35%;
+}
+
+.dvcash .cash .pcash .dvp-money p {
+    font-family: vazir;
+    font-size: 2vw;
+}
+
+.dvcash .cash .pcash .dvb-charge {
+    height: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.dvcash .cash .pcash .dvb-charge button {
+    background-color: #f3c021;
+    height: 85%;
+    width: 75%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 1vw;
+    font-family: vazir;
+}
+
+.profile-stu .left .dvinfo .level .left {
+    height: 95%;
+    width: 60%;
+}
+
+.profile-stu .left .dvinfo .level {
+    border-radius: 25px;
+    height: 300px;
+    width: 50%;
+    background: hsla(0, 0%, 96%, 0.692);
+    box-shadow: 0 0.5px 0.5px 0 black;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid #fade7d;
+    box-shadow: 0px 2px 10px 0px #959595;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-stu .left .dvinfo .level .left .edit {
+    display: flex;
+    height: 15%;
+    width: 100%;
+}
+
+.profile-stu .left .dvinfo .level .left .edit .pedit {
+    font-size: 1vw;
+    color: black;
+    font-family: vazir;
+}
+
+.profile-stu .left .dvinfo .level .left .name {
+    height: 30%;
+    width: 100%;
+}
+
+.profile-stu .left .dvinfo .level .left .name .dv-level {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-stu .left .dvinfo .level .left .name .dv-level .dvp-level {
+    height: 100%;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-stu .left .dvinfo .level .left .name .dv-level .dvp-level p {
+    font-family: vazir;
+    text-align: right;
+    font-size: 1vw;
+    color: #ff0000;
+}
+
+.profile-stu .left .dvinfo .level .left .name .dv-level .dvp-name {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-stu .left .dvinfo .level .left .name .dv-level .dvp-name p {
+    font-family: vazir;
+    text-align: right;
+    font-size: 1vw;
+}
+
+.profile-stu .left .dvinfo .level .left .name .dvp-name {
+    height: 50%;
+    width: 100%;
+}
+
+.profile-stu .left .dvinfo .level .left .name .dvp-name p {
+    font-size: 2vw;
+    font-family: vazir;
+    text-align: right;
+}
+
+.profile-stu .left .dvinfo .level .left .plevel {
+    background-color: transparent;
+    height: 30%;
+    width: 100%;
+}
+
+.profile-stu .left .dvinfo .level .rightimg .limg {
+    height: 50%;
+    width: 100%;
+}

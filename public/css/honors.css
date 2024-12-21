@@ -1,0 +1,177 @@
+.dvall-honor {
+    display: flex;
+    justify-content: center;
+}
+
+.dv-all-honor {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dvall-honor .dv-honor {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.dvall-honor .dv-honor .dv-hr {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.dvall-honor .dv-honor .dv-hr p {
+    font-size: 1.5vw;
+    font-family: vazir;
+}
+
+.dvall-honor .dv-honor .dv-hr .hr-left {
+    height: 5px;
+    width: 78%;
+    background-color: #f3c021;
+    border-radius: 30px;
+}
+
+.dvall-honor .dv-honor .dv-hr .hr-left p {
+    font-size: 1.5vw;
+    font-family: vazir;
+}
+
+.dvall-honor .dv-honor .dv-hr .hr-right {
+    height: 5px;
+    width: 8%;
+    background-color: #f3c021;
+    border-radius: 30px;
+}
+
+
+
+
+.honors-box {
+    height: auto;
+    width: auto;
+    border: #f3c021 solid 5px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
+}
+
+.dv-number {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 2%;
+}
+
+.dv-number .p-number {
+    font-size: 35px;
+    font-family: Oxanium;
+    font-weight: bold;
+    margin: 5rem;
+}
+
+.dv-number .p-title {
+
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    font-family: vazir;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .dvall-honor {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dv-all-honor {
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+    }
+
+    .dvall-honor .dv-honor {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .dvall-honor .dv-honor .dv-hr {
+        display: flex;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly
+    }
+
+    .dvall-honor .dv-honor .dv-hr p {
+        font-size: 14px;
+        font-family: vazir;
+        text-align: center;
+    }
+
+    .dvall-honor .dv-honor .dv-hr .hr-left {
+        height: 5px;
+        width: 57%;
+        background-color: #f3c021;
+        border-radius: 30px;
+    }
+
+    .dvall-honor .dv-honor .dv-hr .hr-left p {
+        font-size: vw;
+        font-family: vazir;
+    }
+
+    .dvall-honor .dv-honor .dv-hr .hr-right {
+        height: 5px;
+        width: 8%;
+        background-color: #f3c021;
+        border-radius: 30px;
+    }
+
+    .honors-box {
+        height: auto;
+        width: auto;
+        border: #f3c021 solid 5px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3% 0 3% 0;
+    }
+
+    .dv-number {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .dv-number .p-number {
+        font-size: 25px;
+        font-family: Oxanium;
+        font-weight: bold;
+        margin: 3rem;
+    }
+
+    .dv-number .p-title {
+
+        font-size: 15px;
+        width: 60%;
+        text-align: center;
+        font-family: vazir;
+
+    }
+}

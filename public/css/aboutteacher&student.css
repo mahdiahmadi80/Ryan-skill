@@ -1,0 +1,234 @@
+.all {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50 0 0 0;
+}
+
+.all .dvText {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.all .dvText .text {
+  width: 65%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+  direction: rtl;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all .dvText .text .txt {
+  width: 70%;
+font-family: vazir; 
+  font-size: 14;
+  line-height: 2.4;
+}
+
+.all .dvText .text .dvButton {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all .dvText .text .dvButton .Register {
+  background-color: #2e14de;
+  color: white;
+  width: 28%;
+  height: 40px;
+  margin: 15 0 0 0;
+  border-radius:20px ;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius:20px ;
+  -moz-border-radius:20px ;
+  -ms-border-radius:20px ;
+  -o-border-radius:20px ;
+}
+
+.all .dvText .text .dvButton .Register1 {
+  background-color: #f3c021;
+  color: white;
+  width: 28%;
+  height: 40px;
+  margin: 15 0 0 0;
+  border-radius:20px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.all .dvText .pic {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all .dvText .pic img {
+  width: 77%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+
+  .all {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 50 0 0 0;
+  }
+  
+  .all .dvText {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+  
+  .all .dvText .text {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+    direction: rtl;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .all .dvText .text .txt {
+    width: 90%;
+  font-family: vazir; 
+    font-size: 14;
+    line-height: 2;
+    text-align: center;
+    padding: 7% 0 3% 0;
+  }
+  
+  .all .dvText .text .dvButton {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .all .dvText .text .dvButton .Register {
+    background-color: #2e14de;
+    color: white;
+    width: 28%;
+    height: 40px;
+    margin: 15 0 0 0;
+    border-radius:20px ;
+    border: none;
+    cursor: pointer;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+  }
+  
+  .all .dvText .text .dvButton .Register1 {
+    background-color: #f3c021;
+    color: white;
+    width: 28%;
+    height: 40px;
+    margin: 15 0 0 0;
+    border-radius:20px;
+    border: none;
+    cursor: pointer;
+  
+  }
+  
+  .all .dvText .pic {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .all .dvText .pic img {
+    width: 85%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+  }
+  
+}

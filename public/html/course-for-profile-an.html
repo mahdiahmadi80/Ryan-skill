@@ -1,0 +1,22 @@
+<div class="dvall-cours">
+    <div ng-repeat="x in coursesbuy" class="dv-courslist">
+        <div>
+            <img src="{{x.imgsrc}}">
+        </div>
+        <div class="dvp-course">
+            <p class="p-namecourse"> {{x.title}}</p>
+            <p>{{x.caption}}</p>
+            <p>طول دوره {{x.time}}</p>
+            <p ng-show="{{x.plicense}}"> {{x.license}}</p>
+            <br>
+            <div class="dv-btncourse">
+                <button>
+                    <a href="">{{x.price}}</a>
+                </button>
+                <button>
+                    <a href="{{x.link}}">جزیات دوره</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

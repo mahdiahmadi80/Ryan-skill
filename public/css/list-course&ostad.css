@@ -1,0 +1,421 @@
+.dvall-list {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 5% 0;
+
+}
+
+.dvall-list .dv-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    width: 85%;
+    background: hsla(0, 5%, 85%, 0.692);
+    border-radius: 10px 10px 0 0;
+    backdrop-filter: blur(3.1px);
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+.dvall-list .dv-list .dvall-buttonlist {
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+
+}
+
+.dvall-list .dv-list .dvall-buttonlist .dv-buttonlist {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1% 0;
+}
+
+.dvall-list .dv-list .dvall-buttonlist .dv-buttonlist .btn-list-courses {
+    max-width: 37%;
+    min-width: 35%;
+    padding: 0.15%;
+    background-color: #f3c021;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: #2e14de solid 1.5px;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.dvall-list .dv-list .dvall-buttonlist .dv-buttonlist .btn-list-courses p {
+    font-size: 16px;
+    font-family: vazir;
+
+}
+
+.dvall-list .dv-list .dvall-buttonlist .dv-filtericon {
+    width: auto;
+    background-color: #f3c021;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.dvall-list .dv-list .dvall-buttonlist .dv-searchicon {
+    width: auto;
+    background-color: #f3c021;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.dvall-list .dv-list .dvall-ostadinfo {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info {
+    height: auto;
+    width: 16%;
+    margin: 0 0 3% 0;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 9% 5%;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dv-p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 3% 0;
+    justify-content: flex-end;
+
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dv-p .dv-text {
+    width: 100%;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dv-p .dv-text p {
+    font-family: vazir;
+    font-size: 1vw;
+    font-weight: bolder;
+    text-align: right;
+    padding: 0 10%;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dv-p .dv-icon {
+    width: 20%;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .dv-info {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    background-color: #f3c021;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .dv-info p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: vazir;
+}
+
+.dv-paging {
+    width: 100%;
+    height: 10%;
+    background-color: #f3c021;
+    border-radius: 0 0 80px 80px;
+}
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dvbtn-buy {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dvbtn-buy button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 3px solid #fade7d;
+    width: 40%;
+}
+
+
+
+.dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dvbtn-buy button p {
+    font-family: vazir;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .dvall-list {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        margin: 10% 0;
+    }
+
+    .dvall-list .dv-list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: auto;
+        width: 85%;
+        background: hsla(0, 5%, 85%, 0.692);
+        border-radius: 40px 40px 0 0;
+        backdrop-filter: blur(3.1px);
+
+    }
+
+    .dvall-list .dv-list .dvall-buttonlist {
+        display: flex;
+        justify-content: center;
+        height: auto;
+
+
+    }
+
+    .dvall-list .dv-list .dvall-buttonlist .dv-buttonlist {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1% 0;
+    }
+
+    .dvall-list .dv-list .dvall-buttonlist .dv-buttonlist .btn-list-courses {
+        max-width: 37%;
+        min-width: 35%;
+        padding: 0.15%;
+        background-color: #f3c021;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: #2e14de solid 1.5px;
+        cursor: pointer;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+    .dvall-list .dv-list .dvall-buttonlist .dv-buttonlist .btn-list-courses p {
+        font-size: 10px;
+        font-family: vazir;
+        text-align: center;
+    }
+
+    .dvall-list .dv-list .dvall-buttonlist .dv-filtericon {
+        width: auto;
+        background-color: #f3c021;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 1px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .dvall-list .dv-list .dvall-buttonlist .dv-searchicon {
+        width: auto;
+        background-color: #f3c021;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+
+    .dvall-list .dv-list .dvall-ostadinfo {
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info {
+        height: auto;
+        width: 46%;
+        margin: 3% 1%;
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info img {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: 140px;
+        -webkit-border-radius: 15px 15px 0 0;
+        -moz-border-radius: 15px 15px 0 0;
+        -ms-border-radius: 15px 15px 0 0;
+        -o-border-radius: 15px 15px 0 0;
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 5% 5%;
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dv-p {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 3% 0;
+
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dv-p .dv-text {
+        width: 80%;
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dv-p .dv-text p {
+        font-family: vazir;
+        font-size: 10px;
+        font-weight: bolder;
+        text-align: right;
+        padding: 0 10%;
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dv-p .dv-icon {
+        width: 20%;
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .dv-info {
+        height: 25px;
+        width: 100%;
+        display: flex;
+        background-color: #f3c021;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .dv-info p {
+        text-align: center;
+        font-size: 9px;
+        font-weight: bold;
+        font-family: vazir;
+    }
+
+    .dv-paging {
+        width: 100%;
+        height: 5%;
+        background-color: #f3c021;
+        border-radius: 0 0 80px 80px;
+    }
+
+
+
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dvbtn-buy {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+    
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dvbtn-buy button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 3px solid #fade7d;
+        width: 85%;
+        margin: 2% 0;
+        border-radius: 10px;
+    }
+    
+    
+    
+    .dvall-list .dv-list .dvall-ostadandcourse-info .dv-ostadandcourse-info .ostadandcourse-info .dvp-ostadandcourse .dvbtn-buy button p {
+        font-family: vazir;
+        font-weight: bolder;
+        font-size: 10px;
+    }
+    
+
+
+}

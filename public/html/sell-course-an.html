@@ -1,0 +1,231 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+
+
+    <!-- Css Links -->
+    <script src="../JavaScript/angular.min.js"></script>
+    <script src="../JavaScript/general.js"></script>
+    <link rel="stylesheet" href="../Css/General.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
+
+    <!-- Css web Parts -->
+    <link rel="stylesheet" href="../Css/profile-stu.css">
+    <link rel="stylesheet" href="../Css/profile-sellcourse.css">
+
+
+    <!-- background: hsla(0, 0%, 96%, 0.692);box-shadow: 0 0.5px 0.5px 0 black;backdrop-filter: blur(3.1px); border: 1px solid rgba(255, 255, 255, 0.56); -->
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+    <div ng-include="'menu.html'"></div>
+    <div class="dv-sellcourse">
+    </div>
+
+
+
+
+    <div class="profile-stu">
+        <div class="left">
+            <div class="dv-filter">
+                <!-- cash -->
+                <div class="dvfilter">
+
+                    <!-- code -->
+                    <div class="filter">
+
+                        <div class="dvbtn">
+
+                            <button class="btnfilter">دوره های محبوب</button>
+                            <button class="btnfilter">دوره های حذف شده</button>
+                            <button class="btnfilter">دوره های دمو</button>
+                            <button class="btnfilter">همه دوره ها</button>
+
+
+
+
+
+                        </div>
+                        <div class="dvsearch">
+
+
+                            <div class="search">
+                                <div class="searchtype">
+                                    <input type="text">
+                                </div>
+                                <div class="searchicon"><iconify-icon icon="material-symbols:search"
+                                        style="color: #ffce3b;" width="35"></iconify-icon></div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="uploaded-cours">
+
+
+                <!-- add btn -->
+
+
+                <div class="dv-addcourses">
+                    <div class="dvp-addcourse">
+
+
+                        <div class="addcourse">
+                            <iconify-icon icon="material-symbols:add-circle-rounded" style="color: #ffce3b;"
+                                width="70"></iconify-icon>
+                            <div class="dv-btncourse">
+                                    <a href="add-courses.html?idcourse={{x.link}}">افزودن دوره جدید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end add btn -->
+
+
+
+
+
+
+
+
+
+
+
+
+                <div ng-repeat="x in courses" class="dv-uploaded-cours">
+                    <div>
+                        <img src="{{x.imgsrc}}">
+                    </div>
+                    <div class="dvp-uploaded-cours">
+                        <p class="p-namecourse"> {{x.title}}</p>
+                        <p>{{x.caption}}</p>
+                        <p>طول دوره {{x.time}}</p>
+                        <p ng-show="{{x.plicense}}"> {{x.license}}</p>
+                        <br>
+                        <div class="dv-btncourse">
+                            <button>
+                                <a href="">{{x.price}}</a>
+                            </button>
+                            <button>
+                                <a href="addcourse.html?idcourse={{x.link}}">جزیات دوره</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- courses -->
+            <!-- <div class="dvcourses">
+                <div class="pcourses">
+                    <hr>
+                    <p>دوره های خریداری شده</p>
+                    <hr>
+                </div>
+                <div class="courses-stu">
+                    <div class="cours-add"></div>
+                    <div class="cours"></div>
+                    <div class="cours"></div>
+                    <div class="cours"></div>
+                </div>
+            </div> -->
+
+
+            <!-- for profile -->
+
+            <!-- for profile -->
+
+
+        </div>
+        <div class="right">
+            <div class="dvpanel">
+                <div class="dv-panel">
+                    <div class="dv-imgp">
+                        <img src="../img/ca1ccb94-ce7c-4449-a2c9-78c5f0c75ba7.png" class="center">
+                        <p><iconify-icon icon="el:ok-sign" style="color:#4ecb71;"></iconify-icon>
+                            دانشجوی <span style="color: #4ecb71;">تایید شده</span>
+                        </p>
+                        <p>محمد مهدی احمدی</p>
+                    </div>
+                    <div class="dv-dropdown">
+                        <div class="dropdown-panel" style="display: flex;">
+                            <div>
+                                <p>داشبورد</p>
+                            </div>
+                            <div>
+                                <p>اطلاعات شخصی </p>
+                            </div>
+                            <div>
+                                <p>بخش دوره ها</p>
+                            </div>
+                            <div>
+                                <p>امور مالی</p>
+                            </div>
+                            <div>
+                                <p>بخش گواهینامه</p>
+                            </div>
+                            <div>
+                                <p>پیام ها </p>
+                            </div>
+                            <div>
+                                <p> تیکت ها و پشتیبانی</p>
+                            </div>
+                            <!-- <div><p> آپلود دوره ها</p></div>
+                            <div><p>پکیج های ویژه</p></div>
+                            <div><p>لیست اساتید ثبت شده</p></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScripts Link -->
+    <script src="../JavaScript/General.js"></script>
+    <script src="../JavaScript/json.js"></script>
+    <script src="../JavaScript/fontawsome/fontawsome.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Css Links -->
+    <script src="../JavaScript/angular.min.js"></script>
+    <script src="../JavaScript/general.js"></script>
+    <script src="../JavaScript/json.js"></script>
+
+    <link rel="stylesheet" href="../Css/General.css">
+    <link rel="stylesheet" href="../Css/menu.css">
+
+
+    <!-- Css web Parts -->
+    <link rel="stylesheet" href="../Css/lst-courses.css">
+
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl" ng-init="courseslistload()">
+    <!-- circle -->
+    <div
+        style=" clip-path: circle(17% at 50% 50%);width: 100%;height: 100%;background-color: #B4C7CE;position: fixed;z-index: -1;">
+    </div>
+    <div
+        style=" clip-path: circle(15% at 98% 76%);width: 100%;height: 100%;background-color: #76c6f2;position: fixed;z-index: -1;">
+    </div>
+    <div
+        style=" clip-path: circle(15% at 10% 82%);width: 100%;height: 100%;background-color: #76c6f2;position: fixed;z-index: -1;">
+    </div>
+    <!-- circle -->
+    <div ng-include="'menu.html'"></div>
+    <br><br><br>
+    <div ng-include="'courses-classes-nj.html'"></div>
+    <div class="dvp-lstcourses">
+        <div>
+            <hr>
+            <P>لیست دوره ها</P>
+            <hr>
+        </div>
+    </div>
+    <div class="dvall">
+        <div class="dv-left">
+            <div class="dv-tartib">
+                <div class="dvp-tartib">
+                    <div class="tartib">
+                        <p>بیشترین بازدید</p>
+                    </div>
+                    <div class="tartib">
+                        <p>جدید ترین</p>
+                    </div>
+                    <div class="tartib">
+                        <p>محبوب ترین</p>
+                    </div>
+                    <div class="tartib">
+                        <P>:مرتب سازی بر اساس</P>
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 90%;background-color: #f3c021;height: 2px;margin:0 0 0.75% 0">
+            <div class="dvall-cours">
+                <div ng-repeat="x in listcourses" class="dv-courslist">
+                    <div>
+                        <img src="{{x.coImg}}">
+                    </div>
+                    <div class="dvp-course">
+                        <p class="p-namecourse"> {{x.coTitle}}</p>
+                        <p>{{x.coAbstract}}</p>
+                        <p>طول دوره {{x.time}}</p>
+                        <p ng-show="{{x.plicense}}"> {{x.license}}</p>
+                        <br>
+                        <div class="dv-btncourse">
+                            <button>
+                                <a href="">{{x.coPrice}} تومان</a>
+                            </button>
+                            <button>
+                                <a href="course.html?id={{x.coID}}">جزیات دوره</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="dv-close">
+                <div class="dv-iconclose">
+                    <iconify-icon icon="ant-design:close-circle-outlined" width="25">
+                    </iconify-icon>
+                </div>
+                <p>حذف تمام فیلترها</p>
+            </div>
+
+
+
+
+
+            <div class="sidenav">
+
+                <div ng-repeat="x in menucourseslist" ng-click="filtCrs(x)">
+
+                    <button class="dropdown-btn">
+                        <i class="fa fa-caret-down"></i><p>{{x.title}}</p>
+                    </button>
+
+                    <div class="dropdown-container" ng-show="x.isShow">
+                        <div
+                            style="display: flex;flex-direction: column;justify-content: space-evenly;height: 100%;align-items: center;">
+                            <a ng-repeat="c in x.submenu"  href="#">{{c.subitem}}</a>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+            
+
+
+
+            </div>
+
+
+
+            <!-- <div ng-repeat="x in menucourseslist">
+                {{x.title}}
+                 <a ng-repeat="c in x.submenu" >{{c.subitem}}</a>
+            </div>
+         -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="dv-classescourse" ng-repeat="x in menucourseslist">
+                <div class="dv-iconclasses">
+                    <iconify-icon icon="ant-design:caret-down-filled" width="25"></iconify-icon>
+                </div>
+                <p>
+                    {{x.title}}
+                </p>
+            </div> -->
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- <div style="width: 100%;height:4rem;background-color: #8098a1;border-radius: 100px 100px 0 0; display: flex;align-items: center;justify-content: center;font-family: beirut;font-size: 2.25em;color: white;">رایان</div> -->
+
+
+
+
+    <!-- JavaScripts Link -->
+    <script src="../JavaScript/couseCtrl.js"></script>
+    <script src="../JavaScript/General.js"></script>
+    <script src="../JavaScript/fontawsome/fontawsome.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript/iconifyvs1.1.js"></script>
+    <script src="../JavaScript/iconifyvs2.2.js"></script>
+
+</body>
+
+</html>

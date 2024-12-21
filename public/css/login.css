@@ -1,0 +1,505 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* login-page */
+::placeholder {
+  font-family: vazir;
+  font-weight: 600;
+  font-size: 1vw;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.login-right {
+  width: 40%;
+}
+
+.login {
+  height: auto;
+  width: 40%;
+}    
+
+.login-bacground {
+  background-image: url(../img/beautiful-login-pages-01\ -\ Copy.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.login .vorod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login .vorod .p-vorod {
+  color: black;
+  font-size: 2.5vw;
+  font-family: vazir;
+}
+
+.login .vorod hr {
+  width: 30%;
+  background-color: #FFB844;
+  height: 2px;
+  border: #FFB844;
+}
+
+.login .vorod .p-welcome {
+  color: black;
+  font-size: 1vw;
+  font-family: vazir;
+  margin-top: 2%;
+  font-weight: 500;
+}
+
+.login .login-user {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.login .login-user div {
+  width: 50%;
+}
+
+.login .login-user div .iconify {
+  position: absolute;
+  color: #757575
+}
+
+.login .login-user div input {
+  outline:none;
+  border: none;
+  border-bottom: solid #FFB844;
+  background-color: white;
+  color: black;
+  height: 30px;
+  width: 100%;
+  text-align: right;
+}
+
+.login .login-password {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.login .login-password div {
+
+  width: 50%;
+}
+
+.login .login-password div .iconify {
+  position: absolute;
+  color: #757575
+}
+
+.login .login-password div input {
+  outline: none;
+  border: none;
+  border-bottom: solid #FFB844;
+  background-color: white;
+  color: black;
+  height: 30px;
+  width: 100%;
+  text-align: right;
+}
+
+.login .repass p {
+  color: #F21D1D;
+  font-family: vazir;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 1vw;
+  display: none;
+}
+
+.login .repass span {
+  color: #1A89E5;
+  font-family: vazir;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.login-btn button {
+  background-image: linear-gradient(to right, #29939c, #32D8FE);
+  border: none;
+  border-radius: 20px;
+  width: 30%;
+  color: white;
+  font-size: 1.5vw;
+  font-family: vazir;
+  cursor: pointer;
+}
+
+.login .login-singup {
+  display: flex;
+  justify-content: center;
+}
+.login .login-singup p{
+color: black;
+}
+.login .login-singup a{
+  color: black;
+  }
+
+.login .login-singup p {
+  font-size: 1vw;
+  font-family: vazir;
+  margin-top: 5%;
+}
+
+.login .login-singup span {
+  color: #3461D7;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  ::placeholder {
+    font-family: vazir;
+    font-weight: 600;
+    font-size: 1.75vw;
+  }
+
+  .login-right {
+    display: none;
+  }
+
+  .login-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+
+  .login {
+    height: 20rem;
+    width: 100%;
+  }
+
+  .login-bacground {
+    background-image: url(../img/beautiful-login-pages-01\ -\ Copy.jpg);
+    height: 100%;width: 100%;
+  }
+
+  .login .vorod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .login .vorod .p-vorod {
+    color: black;
+    font-size: 4vw;
+    font-family: vazir;
+  }
+
+  .login .vorod hr {
+    width: 30%;
+    background-color: #FFB844;
+    height: 2px;
+    border: #FFB844;
+  }
+
+  .login .vorod .p-welcome {
+    color: black;
+    font-size: 1.75vw;
+    font-family: vazir;
+    margin-top: 2%;
+    font-weight: 500;
+  }
+
+  .login .login-user {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .login .login-user div {
+    width: 50%;
+  }
+
+  .login .login-user div .iconify {
+    position: absolute;
+    color: #757575
+  }
+
+
+
+
+  .login .login-user div input{
+    border: none;
+    border-bottom: solid #FFB844;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .login .login-password {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .login .login-password div {
+
+    width: 50%;
+  }
+
+  .login .login-password div .iconify {
+    position: absolute;
+    color: #757575
+  }
+
+  .login .login-password div input {
+    border: none;
+    border-bottom: solid #FFB844;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .login .repass p {
+    color: #F21D1D;
+    font-family: vazir;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 1.75vw;
+  }
+
+  .login .repass span {
+    color: #1A89E5;
+    font-family: vazir;
+  }
+
+  .login-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .login-btn button {
+    background-image: linear-gradient(to right, #29939c, #32D8FE);
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    color: white;
+    font-size: 2.5vw;
+    font-family: vazir;
+    cursor: pointer;
+  }
+
+  .login .login-singup {
+    display: flex;
+    justify-content: center;
+  }
+
+  .login .login-singup p {
+    font-size: 1.75vw;
+    font-family: vazir;
+    margin-top: 5%;
+  }
+
+  .login .login-singup span {
+    color: #3461D7;
+  }
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 425px) {
+  ::placeholder {
+    font-family: vazir;
+    font-weight: 600;
+    font-size: 3vw;
+  }
+
+  .login-right {
+    display: none;
+  }
+
+  .login-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+
+  .login {
+    height: 20rem;
+    width: 100%;
+  }
+
+  .login-bacground {
+    background-image: url(../img/beautiful-login-pages-01\ -\ Copy.jpg);
+    height: 100%;width: 100%;
+  }
+
+  .login .vorod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .login .vorod .p-vorod {
+    color: black;
+    font-size: 8vw;
+    font-family: vazir;
+  }
+
+  .login .vorod hr {
+    width: 30%;
+    background-color: #FFB844;
+    height: 3px;
+    border: #FFB844;
+  }
+
+  .login .vorod .p-welcome {
+    color: black;
+    font-size: 2.75vw;
+    font-family: vazir;
+    margin-top: 2%;
+    font-weight: 500;
+  }
+
+  .login .login-user {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .login .login-user div {
+    width: 50%;
+  }
+
+  .login .login-user div .iconify {
+    position: absolute;
+    color: #757575
+  }
+
+  .login .login-user div input {
+    border: none;
+    border-bottom: solid #FFB844;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .login .login-password {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  .login .login-password div {
+
+    width: 50%;
+  }
+
+  .login .login-password div .iconify {
+    position: absolute;
+    color: #757575
+  }
+
+  .login .login-password div input {
+    border: none;
+    border-bottom: solid #FFB844;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .login .repass p {
+    color: #F21D1D;
+    font-family: vazir;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 2.75vw;
+  }
+
+  .login .repass span {
+    color: #1A89E5;
+    font-family: vazir;
+  }
+
+  .login-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  
+
+
+  .login-btn button {
+    background-image: linear-gradient(to right, #29939c, #32D8FE);
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    color: white;
+    font-size: 3.5vw;
+    font-family: vazir;
+    cursor: pointer;
+  }
+
+  .login .login-singup {
+    display: flex;
+    justify-content: center;
+  }
+
+  .login .login-singup p {
+    font-size: 2.75vw;
+    font-family: vazir;
+    margin-top: 5%;
+  }
+
+  .login .login-singup span {
+    color: #3461D7;
+  }
+}
+
+
+
+
+
+
+

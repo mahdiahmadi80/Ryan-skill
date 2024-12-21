@@ -1,0 +1,566 @@
+.hide-desktop
+{
+    display:none !important;
+}
+
+.dv-classes {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: vazir;
+}
+
+.classes-dropdown {
+    width: 15%;
+}
+
+.drop-link {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.drop-link a {
+    color: red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-link a:hover {
+    background-color: #f1f1f1
+}
+
+.classes-dropdown:hover .drop-link {
+    display: block;
+}
+
+.dvmenu {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 1px 2px 0px black;
+}
+
+.dvmenu.firstpage {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    background-color: transparent;
+    z-index: 1;
+    box-shadow: 0px 1px 2px 0px black;
+}
+
+.dvmenu.firstpage .dvleft .dvnew .dvp-new p {
+    color: white;
+}
+
+.dvb-new.firstpage {
+    height: 70%;
+    width: 5%;
+    background-color: transparent;
+    border-right: #f3c021 solid 3px;
+}
+
+.dvb-new {
+    height: 70%;
+    width: 5%;
+    background-color: white;
+    border-right: #f3c021 solid 3px;
+}
+
+.dvmenu .dvleft {
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.dvmenu .dvleft .dvaccount {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* logined */
+.access {
+    display: none;
+    position: absolute;
+    background: hsla(0, 0%, 96%, 0.692);
+    border-radius: 5px;
+    box-shadow: 0 0.5px 0.5px 0 black;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    margin-top: 22%;
+    min-width: 12%;
+    max-width: 14%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.access a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+font-family: vazir;    
+cursor: pointer;
+}
+
+
+.show-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.dvmenu .dvleft .dvaccount .lan-acc {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.dvmenu.firstpage .dvleft .dvaccount .lan-acc {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color:transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* .dvmenu .dvleft .dvaccount .lan-acc .btlan {
+    height: 50%;
+    width: 12%;
+    background-color: #f3c021;
+    border-radius: 15px;
+    border: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+} */
+
+.btsign {
+    height: 40%;
+    width: 35%;
+    color: white;
+    font-size: 1.1vw;
+    font-family: vazir;
+    background-color: #2e14de;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.dvmenu .dvleft .dvaccount .lan-acc .dv-access-btn{
+    display: flex;flex-direction: row;justify-content: space-between;align-items: center;width: 35%;background-color: transparent;border: none;
+}
+.dvmenu .dvleft .dvaccount .lan-acc .dv-access-btn p{
+    color: white;font-family: vazir; font-size: 15px;
+}
+
+/* .dvmenu .dvleft .dvaccount .lan-acc .dv-access-btn:hover{
+    justify-content: space-around;
+    background: hsla(0, 0%, 96%, 0.692);
+    border-radius: 5px;
+    min-width: 90%;
+    box-shadow: 0 0.5px 0.5px 0 black;
+    backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+} */
+
+
+
+
+.dvmenu .dvleft .dvaccount .lan-acc .btlog {
+    height: 40%;
+    width: 35%;
+    font-size: 1.25vw;
+    font-family: vazir;
+    background-color: #f3c021;
+    border: none;
+    border-radius: 25px;
+}
+
+
+
+
+.dvmenu .dvleft .dvnew {
+    height: 100%;
+    width: 35%;
+    display: flex;
+}
+
+.dvmenu .dvleft .dvnew .dviconnew {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+}
+
+.dvmenu .dvleft .dvnew .dvp-new {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dvmenu .dvleft .dvnew .dvp-new p {
+
+    font-size: 1vw;
+    font-family: vazir;
+    color: black;
+}
+
+.dvmenu .dvright {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dvmenu .dvright .dvclases {
+    display: flex;
+    height: 70%;
+    width: 95%;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+
+.dvmenu .dvright .dvclases .dv-classes {
+
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 0;
+}
+
+.dvmenu .dvright .dvclases .dv-classes p {
+
+    font-size: 1vw;
+    font-family: vazir;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.dvmenu .dvright .dvclases .dvp-rayan {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dvmenu .dvright .dvclases .dvp-rayan p {
+
+    font-family: beirut;
+    font-size: 2.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  
+
+
+
+    .dvmenu.firstpage .dvleft .dvaccount .lan-acc {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        background-color:#373737;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    
+    }
+
+    
+    
+
+
+
+
+    .dvmenu.firstpage {
+        height: 15%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        background-color: transparent;
+        z-index: 1;
+        box-shadow: 0px 1px 2px 0px black;
+    }
+
+    .dvmenu.firstpage .dvleft .dvnew .dvp-new p {
+        color: white;
+    }
+
+    .dvb-new.firstpage {
+        height: 70%;
+        width: 5%;
+        background-color: transparent;
+        border-right: #f3c021 solid 3px;
+    }
+
+
+
+    .dvmenu {
+        height: 12%;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        z-index: 1;
+        box-shadow: 0px 1px 2px 0px black;
+    }
+
+    .dvmenu .dvleft {
+
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .dvmenu .dvleft .dvaccount {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .dvmenu .dvleft .dvaccount .lan-acc {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .dvmenu .dvleft .dvaccount .lan-acc .btlan {
+        height: 65%;
+        width: 12%;
+        background-color: #f3c021;
+        border-radius: 15px;
+        border: none;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    .dvmenu .dvleft .dvaccount .lan-acc .btsign {
+        height: 65%;
+        width: 35%;
+        color: white;
+        font-size: 11px;
+        font-family: vazir;
+        background-color: #2e14de;
+        border: none;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+
+    .dvmenu .dvleft .dvaccount .lan-acc .btlog {
+        height: 65%;
+        width: 35%;
+        font-size: 11px;
+        font-family: vazir;
+        background-color: #f3c021;
+        border: none;
+        border-radius: 25px;
+    }
+
+    .dvmenu .dvleft .dvnew {
+        height: 100%;
+        width: 35%;
+        display: flex;
+    }
+
+    .dvmenu .dvleft .dvnew .dviconnew {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 30%;
+    }
+
+    .dvmenu .dvleft .dvnew .dvp-new {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .dvmenu .dvleft .dvnew .dvp-new p {
+
+        font-size: 1vw;
+        font-family: vazir;
+        color: black;
+    }
+
+    .dvmenu .dvright {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .dvmenu.firstpage .dvright {
+        height: 100%;
+        width: 100%;
+        background-color: #373737;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .dvmenu .dvright .dvclases {
+        display: flex;
+        height: 70%;
+        width: 95%;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .dvmenu .dvright .dvclases .dv-classes {
+
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        display: inline-block;
+        padding: 0 0 0 0;
+    }
+
+    .dvmenu .dvright .dvclases .dv-classes p {
+
+        font-size: 10px;
+        font-family: vazir;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+
+    .dvmenu .dvright .dvclases .dvp-rayan {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dvmenu .dvright .dvclases .dvp-rayan p {
+
+        font-family: beirut;
+        font-size: 25px;
+    }
+
+    .dv-classes {
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        font-family: vazir;
+    }
+
+    .classes-dropdown {
+        width: auto;
+    }
+
+    .drop-link {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .drop-link a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .drop-link a:hover {
+        background-color: #f1f1f1
+    }
+
+    .classes-dropdown:hover .drop-link {
+        display: block;
+    }
+
+
+
+    .hide {
+        display: none !important;
+    }
+}

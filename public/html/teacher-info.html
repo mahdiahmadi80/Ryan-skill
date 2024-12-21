@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Css Links -->
+    <script src="../JavaScript/angular.min.js"></script>
+    <script src="../JavaScript/general.js"></script>
+    <script src="../JavaScript/json.js"></script>
+
+    <link rel="stylesheet" href="../Css/General.css">
+    <link rel="stylesheet" href="../Css/menu.css">
+
+
+    <!-- Css web Parts -->
+    <link rel="stylesheet" href="../Css/teacher-info.css">
+    <link rel="stylesheet" href="../Css/lst-courses.css">
+
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+    <div ng-include="'menu.html'"></div>
+    <br><br><br><br><br>
+
+    <div style="display: flex;align-items: center;flex-direction: column;">
+
+ <div
+        style="display:flex;height: 100%;width: 100%;justify-content: center;flex-direction: column;align-items: center;">
+
+        <div style="height: 2%;width: 85%; display: flex;flex-direction: row;justify-content: flex-end;font-family: vazir;">
+            <p>پروفایل اساتید</p>
+            <iconify-icon icon="ant-design:double-left-outlined" width="25" style="color:#f3c021;">
+            </iconify-icon>
+            <p>صفحه اصلی</p>
+        </div>
+
+        <hr style="height: 2px;width: 90%;background-color: #ffce3b;">
+        <br>
+
+
+        <div class="dv-teach-info"></div>
+
+
+
+        <div class="dv-edu-amar">
+            <div class="dv-nemodar">
+            </div>
+            <div class="dv-edu">
+                <hr style="background-color: #ffce3b;height: 5px;width: 100%;">
+                <div class="dv-education"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- JavaScripts Link -->
+    <script src="../JavaScript/General.js"></script>
+    <script src="../JavaScript/fontawsome/fontawsome.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript/iconifyvs1.1.js"></script>
+    <script src="../JavaScript/iconifyvs2.2.js"></script>
+
+</body>
+
+</html>

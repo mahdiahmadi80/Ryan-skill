@@ -1,0 +1,184 @@
+﻿<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="../Css/General.css">
+    <!-- Css web Parts -->
+    <link rel="stylesheet" href="../Css/menu.css">
+    <link rel="stylesheet" href="../Css/course.css">
+    <!-- background: hsla(0, 0%, 96%, 0.692);box-shadow: 0 0.5px 0.5px 0 black;backdrop-filter: blur(3.1px); border: 1px solid rgba(255, 255, 255, 0.56); -->
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl" ng-init="loadcourseselected()">
+    <div ng-include="'menu.html'"></div>
+    <!-- circle -->
+    <div
+        style=" clip-path: circle(17% at 50% 50%);width: 100%;height: 100%;background-color: #B4C7CE;position: fixed;z-index: -1;">
+    </div>
+    <div
+        style=" clip-path: circle(15% at 98% 76%);width: 100%;height: 100%;background-color: #109BE9;position: fixed;z-index: -1;">
+    </div>
+    <div
+        style=" clip-path: circle(15% at 10% 82%);width: 100%;height: 100%;background-color: #f3c021;position: fixed;z-index: -1;">
+    </div>
+    <!-- circle -->
+    <div class="dvall-courses" ng-repeat="x in myWelcome">
+        <div class="dvpage-courses">
+            <div class="dvloc-site">
+                <div class="dvp-locsite">
+                    <p>{{x.coTitle}}</p>
+                    <iconify-icon icon="ant-design:double-left-outlined" width="25" style="color:#f3c021;">
+                    </iconify-icon>
+
+                    <a href="lst-list.html">
+                        <p>لیست دوره ها</p>
+                    </a>
+
+                    <iconify-icon icon="ant-design:double-left-outlined" width="25" style="color:#f3c021;">
+                    </iconify-icon>
+                    <a href="login.html">
+                        <p>صفحه اصلی</p>
+                    </a>
+                </div>
+                <hr>
+            </div>
+            <div class="dv-info">
+                <div class="dv-left">
+                    <div class="dvup">
+                        <div class="up">
+                            <div class="dv-cashac">
+                                <div class="dvp-cashac">
+                                    <p>هزینه دوره: <strong>{{x.coPrice}} </strong>ریال</p>
+                                    <p>تایم دوره: <strong>{{x.time}}</strong> دقیقه</p>
+                                    <p>تعداد جلسات:<strong>{{x.sessions}}</strong>
+                                    </p>
+                                </div>
+                                <button ng-click="btnalert()" class="hide-desktop">شروع دوره به صورت دمو</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dvcenter">
+                        <div class="dv-playcours">
+                            <button class="btn-playcours">
+                                <iconify-icon icon="bi:triangle-fill" style="color: white; font-size: 35px;"
+                                    rotate="90deg"></iconify-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dv-right">
+                    <div class="up">
+                        <div class="dvcours">
+                            <div class="dv-courseinfo">
+                                <div class="dvp-courseinfo">
+                                    <p class="title">دوره {{x.coTitle}}</p>
+                                    <p class="caption" style="font-family: oxanium;font-weight: 500;">مربوط به
+                                        دسته {{x.classes}}</p>
+                                    <p class="caption" style="font-family: oxanium;font-weight: 500;">نام
+                                        آموزشگاه:{{x.insTitle}}</p>
+                                    <p class="caption" style="font-family: oxanium;font-weight: 500;">امتیاز
+                                        دوره:{{x.star}}</p>
+                                    <br>
+                                    <div class="star">
+                                        <span>
+                                            <iconify-icon icon="bi:star" style="color: #f3c021;font-weight: bolder;">
+                                            </iconify-icon>
+                                        </span>
+                                        <p> نشان کردن</p>
+                                    </div>
+                                </div>
+                                <div class="dv-img">
+                                    <img src="../img/ca1ccb94-ce7c-4449-a2c9-78c5f0c75ba7.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <div class="dvcours">
+                            <div class="Summary">
+                                <p class="ptitle">خلاصه دوره</p>
+                                <hr>
+                                <p class="pcaption">{{x.coAbstract}}
+                                </p>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dv-session">
+        <div class="dvall-session">
+            <div class="dv-title">
+                <div class="title-box">
+                    <div class="dvp-titlebox">
+                        <p>خلاصه جلسات</p>
+                        <hr>
+                    </div>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr ng-repeat="x in myWelcome">
+                            <td>{{x.caption}}</td>
+                            <td> {{x.title}} </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="dv-meeting">
+                <div class="meeting-box">
+                    <div class="dvp-meeting">
+                        <p class="ptitle">جلسات دوره</p>
+                        <hr>
+                        <br>
+                        <div class="meeting">
+                            <div class="meeting-nu" style="border: #f3c021 solid 1px;align-items: center;"
+                                ng-repeat="x in meeting" ng-click="detailsession(x)">
+                                <div class="grid">
+                                    <iconify-icon icon="bi:star" style="color: #f3c021;"></iconify-icon>
+                                    <p>{{x.title}}</p>
+                                </div>
+                                <div class="dv-btn">
+
+                                    <button class="buttondownlaod" ng-show="x.isChecked" ng-repeat="s in x.subitems"
+                                        href="{s.link}}">
+                                        <video>{{s.file}}</video>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>     <div></div>               {{myWelcome}}
+
+    <footer
+        style="height: 15%;width: 100%;background-color: #8098a1;border-radius: 50px 50px 0 0;display: flex;align-items: center;justify-content: center;">
+        <p style="font-family: beirut;font-size: 2.25em;color: white;">رایان</p>
+    </footer>
+
+    <!-- JavaScripts Link -->
+    <script src="../JavaScript/angular.min.js"></script>
+    <script src="../JavaScript/couseCtrl.js"></script>
+    <script src="../JavaScript/iconifyvs1.1.js"></script>
+    <script src="../JavaScript/iconifyvs2.2.js"></script>
+    <script src="../JavaScript/fontawsome/fontawsome.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript/general.js"></script>
+
+</body>
+
+</html>

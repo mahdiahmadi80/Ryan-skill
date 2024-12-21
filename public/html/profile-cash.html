@@ -1,0 +1,233 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+
+
+    <!-- Css Links -->
+    <script src="../JavaScript/angular.min.js"></script>
+    <script src="../JavaScript/general.js"></script>
+    <link rel="stylesheet" href="../Css/General.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../Css/profile-stu.css">
+
+    <!-- background: hsla(0, 0%, 96%, 0.692);box-shadow: 0 0.5px 0.5px 0 black;backdrop-filter: blur(3.1px); border: 1px solid rgba(255, 255, 255, 0.56); -->
+
+</head>
+
+<body ng-app="myApp">
+
+    <div ng-include="'menu.html'" ng-controller="myCtrl"></div>
+    <div style="clip-path: circle(15.5% at 74% 60%);
+    background-color: #b4c7ce;
+    position: fixed;
+    height: 100%;
+    width: 100%;"></div>
+
+    <div style="clip-path: circle(12.5% at 24% 78%);
+background-color: #ffce3b;
+position: fixed;
+height: 100%;
+width: 100%;"></div>
+
+
+
+    <div class="profile-stu" ng-controller="memberCtrl" ng-init="loadmbrselected()">
+        <div class="left">
+            <div class="dvinfo">
+                <!-- cash -->
+                <div class="dvcash">
+                    <div class="cash">
+                        <div class="iconif">
+                            <iconify-icon icon="wpf:sim-card-chip" style="color: #8476e2;" width="80"></iconify-icon>
+                        </div>
+                        <div class="dvpcash">
+                            <div class="pcash">
+                                <div class="dvp-account">{{}}
+
+                                    <p>موجودی حساب</p>
+                                </div>
+                                <div class="dvp-money">
+                                    <p>صد هزار تومان</p>
+                                </div>
+                                <div class="dvb-charge">
+                                    <button>حساب خود را شارژ کنید </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- code -->
+                    <div class="code">
+
+                        <div class="dv-code">
+                            <button>
+                                <p>کپی کردن </p>
+                            </button>
+                            <div class="dv-codenum">
+                                <p>rayanddf665489887</p>
+                            </div>
+                        </div>
+                        <p>کد تخفیف</p>
+                    </div>
+                </div>
+                <!-- about-level -->
+                <div class="level">
+                    <div class="left">
+                        <div class="edit">
+                            <div class="iconedit">
+                                <iconify-icon icon="fa-solid:edit" style="color: #699bf7;" width="25">
+                                </iconify-icon>
+                            </div>
+                            <div class="pedit">
+                                <p> ویرایش اطلاعات کاربری</p>
+                            </div>
+                        </div>
+                        <div class="name">
+                            <div class="dvp-name">
+                                <p>محمد مهدی احمدی</p>
+                            </div>
+                            <div class="dv-level">
+                                <div class="dvp-level">
+                                    <p>سطح 1</p>
+                                </div>
+                                <div class="dvp-name">
+                                    <p> محمد مهدی احمدی <span style="color: #4ecb71;">دانشجو تایید شده<iconify-icon
+                                                icon="el:ok-sign" style="color: #4ecb71;"
+                                                width="20"></iconify-icon></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plevel"></div>
+                    </div>
+                    <div class="rightimg">
+                        <div class="limg">
+                            <img src="../img/ca1ccb94-ce7c-4449-a2c9-78c5f0c75ba7.png"
+                                style="height: 100%;width: 100%;border-radius: 100%;" class="center" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- courses -->
+            <!-- <div class="dvcourses">
+                <div class="pcourses">
+                    <hr>
+                    <p>دوره های خریداری شده</p>
+                    <hr>
+                </div>
+                <div class="courses-stu">
+                    <div class="cours-add"></div>
+                    <div class="cours"></div>
+                    <div class="cours"></div>
+                    <div class="cours"></div>
+                </div>
+            </div> -->
+
+
+            <!-- for profile -->
+
+
+            <!-- <div
+                style="display: flex;justify-content: space-between;flex-direction: column;height: auto;width: 95%;  background: hsla(0, 0%, 96%, 0.692); box-shadow: 0 0.5px 0.5px 0 black;backdrop-filter: blur(3.1px); border: 1px solid #fade7d;box-shadow: 0px 2px 10px 0px #959595;">
+                <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                    <hr style="width: 40%;background-color: #ffce3b;height: 25%;">
+                    <p style="font-family: vazir;padding: 0 2%;">اطلاعات مالی</p>
+                    <hr style="width: 40%;background-color: #ffce3b;height: 25%;">
+                </div>
+
+
+
+
+                <div style="display: flex;flex-direction: row;">
+                    <div style="background-color: #4ecb71; width: 50%;"></div>
+
+                    <div style="background-color: #8476e2; width: 50%;">
+
+
+
+                        <div class="name" style="display: flex;flex-direction: column;">
+                            <p style="font-family: vazir;font-size: 1em;text-align: center;">نام:محمد مهدی</p>
+                            <p style="font-family: vazir;font-size: 1em;text-align: center;"> نام خانوادگی:احمدی</p>
+                        </div>
+
+                        <div class="shoba">
+                            <p style="font-family: vazir;text-align: center;">شماره شبا:6444434454687655453</p>
+                        </div>
+                        <div class="btn" style="width: 100%;;">
+                            <div
+                                style="display: flex;flex-direction: column;height: 100%;width: 100%;align-items: center;">
+                                <div
+                                    style="display: flex;flex-direction: row;width:60%;height: 100%;justify-content: space-around;">
+                                    <button style="height:45px;width: 30%;background-color: red;"></button>
+                                    <button style="height:45px;width: 30%;background-color: red;"></button>
+                                </div>
+                                <div
+                                    style="display: flex;flex-direction: row;width:60%;height: 100%;justify-content: space-around;">
+                                    <button style="height:45px;width: 30%;background-color: red;"></button>
+                                    <button style="height:45px;width: 30%;background-color: red;"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+
+
+            <!-- for profile -->
+
+
+        </div>
+        <div class="right">
+            <div class="dvpanel">
+                <div class="dv-panel">
+                    <div class="dv-imgp">
+                        <img src="../img/ca1ccb94-ce7c-4449-a2c9-78c5f0c75ba7.png" class="center">
+                        <p><iconify-icon icon="el:ok-sign" style="color:#4ecb71;"></iconify-icon>
+                            دانشجوی <span style="color: #4ecb71;">تایید شده</span>
+                        </p>
+                        <p>محمد مهدی احمدی</p>
+                    </div>
+                    <div class="dv-dropdown">
+                        <div class="dropdown-panel" style="display: flex;">
+                            <div>
+                                <p>داشبورد</p>
+                            </div>
+                            <div>
+                                <p>اطلاعات شخصی </p>
+                            </div>
+                            <div>
+                                <a href="profile-lstcourse.html">دوره های خریداری شده</a>
+                            </div>
+                            <div>
+                                <p>امور مالی</p>
+                            </div>
+                            <div>
+                                <p>بخش گواهینامه</p>
+                            </div>
+                            <div>
+                                <p>پیام ها </p>
+                            </div>
+                            <div>
+                                <p> تیکت ها و پشتیبانی</p>
+                            </div>
+                            <!-- <div><p> آپلود دوره ها</p></div>
+                            <div><p>پکیج های ویژه</p></div>
+                            <div><p>لیست اساتید ثبت شده</p></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScripts Link -->
+    <script src="../JavaScript/General.js"></script>
+    <script src="../JavaScript/json.js"></script>
+    <script src="../JavaScript/fontawsome/fontawsome.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+
+</html>
